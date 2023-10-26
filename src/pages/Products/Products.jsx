@@ -11,7 +11,13 @@ const Products = () => {
   const {error,loading, data} = useFetch(Config.API_URL)
 
   const renderProduct = ({item}) => {    
-    return <ProductCard product={item} />;
+    return (
+      <View>
+
+    <Text> Producs</Text>
+    <ProductCard product={item} />
+      </View>
+    )
   };
 
   if (loading) {
